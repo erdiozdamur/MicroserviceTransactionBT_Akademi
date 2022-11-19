@@ -6,11 +6,11 @@ import javax.persistence.*;
 import java.util.Date;
 
 @SequenceGenerator(name = "TRANSACTIONS_SEQUENCE", sequenceName = "BT_AKADEMI_TRANSACTIONS_SEQ", initialValue = 1, allocationSize = 1)
-@Data
 @Table(name = "TRANSACTIONS")
+@Data
 @Entity
-public class Transaction {
-
+public class Transaction
+{
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "TRANSACTIONS_SEQUENCE")
     @Column(name = "TRANSACTION_ID", nullable = false)
     @Id
@@ -24,5 +24,4 @@ public class Transaction {
 
     @Column(name = "TRANSACTION_TIME")
     private Date transactionTime;
-
 }
