@@ -1,0 +1,9 @@
+{
+  "name": "bt-akademi-erdi-transaction",
+  "buildpacks":
+          [
+            {
+              "url": "heroku/gradle"
+            }
+          ]
+}
